@@ -11,11 +11,6 @@
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-![Streams PUBSUB](E:\Backend_THAs\DAY3\Redis_advance1.png)
-![Streams PUBSUB](E:\Backend_THAs\DAY3\Redis_advance2.png)
-
-
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * In whatsapp we can send a message to a person or a group of persons at the same time. Wonder how this can happen. It happen in the backend side that we will be learning today
 
      ~ SUBSCRIBE & PUBLISH
