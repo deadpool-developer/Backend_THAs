@@ -1,0 +1,14 @@
+** 
+- Javascript was made to run on the browsers and also it do not utilise full performance of the system and also developers can not perform multi threading.
+- So, to make the Javascript utilise the full performance of the system NodeJs comes into picture.
+- NodeJs was made to run on the system and work like other programming languages i.e Java.
+- With the help of NodeJS the developers can opt multi-threading technique to make javascript performant.
+- So, Event loops comes into picture.
+**
+
+<------------------------------------------------------------------------------------------------------------------------------------->
+
+# EVENT LOOP...
+
+    - Event is an algorithm that handles the Async nature of javascript.
+    - Async Nature: When the light tasks are executed first and the heavy tasks are at halt. This is done to overcome the latency in execution of other programs.
