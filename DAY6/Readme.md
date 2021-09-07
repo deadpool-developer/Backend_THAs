@@ -1,1 +1,0 @@
-<img src = "V8 engine.png" alt= ""/>
