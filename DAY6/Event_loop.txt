@@ -36,7 +36,7 @@
         ~ call back queue: The engine checks if the call stack is empty. If it is empty, then we check callback queue which has the instruction setTimeout in it.
                           The callback queue sends it to call back stack and the instruction is executed.
 
-    - Javacript have Event loop, callback Queue and web apis and V8 engine contain call stack and heap.
+    - Javacript have Event loop, callback Queue and web apis and V8 engine contain call stack and heap.~
 
     - The benefit of this procedure is JavaScript need not worry about how many cores or nodes a CPU is running on. There is only single call stack for this implementation.
 
