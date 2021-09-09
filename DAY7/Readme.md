@@ -30,3 +30,39 @@
     - Security
     - Performance
     - Edge Cases
+
+9. When function is written after another function then it is known as pipelining. For example-:
+    app.get("/" , (req,res) => {
+    res.status(200).send("hello");
+    });
+
+10. When we have to redirect to new page and fetch the data i.e http://localhost:5000/products?limit=50&q=something_something.
+In this we are requesting the products with limit of 50 pages and searching(q) something_something
+    - In first we were sending a GET request to get the response back.
+    - When we want to see the products we are requesting it so it will come under request.
+    - app.get("/products" , (req,res) => {
+        res.send(req.query);  // This will return the JSON object called query params(refer postman for this)<br>
+        });
+
+    <img src="Query param.png" alt="" />
+    - To get the specific limit or searched item we write:
+        app.get("/products" , (req,res) => {
+        res.send(req.query.q);
+        });
+
+11. If we want to get the same result in different url, we generally use this command <br>
+    app.get("/ab?cd" , (req,res) => { 
+    res.send("abcd");  
+});<br>
+This will show the same result in abcd and acd as we have used 'b' as optional in the url
+
+12. If we want to use any particular character n number of times in the url we can write it in this way: <br>
+    app.get("/ab+cd", (req,res) => {
+    res.send("We can write b as many times but this will print same result");<br>
+})
+
+13. RegExp-: - A regular expression is an object that describes a pattern of characters.
+             -Regular expressions are used to perform pattern-matching and "search-and-replace" functions on text.
+             SYNTAX:
+                - /pattern/modifiers;
+                - var patt = /w3schools/i  --no matter what comes after w3schools in the url, it will give the same result
