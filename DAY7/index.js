@@ -114,7 +114,7 @@ app.get("/" , (req,res) => {
 //     res.send("Another example of RegExp. In this fly must come at the last.")
 // })
 
-app.get("/user/:userId/books/:bookId" , (req,res) => {
+app.get("/user/:userId/books/:bookId" , (req,res) => {  //http://localhost:5000/user/1/books/2
     res.send(req.params);  //We can handle the variable state by using : i.e :bookId and :userId
 })
 //---------------------------------------------------------------------------------------------------------------------------------//
