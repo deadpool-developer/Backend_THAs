@@ -26,3 +26,12 @@
 - If we want to check the specific url in every url then we can simply use the express feature i.e. app.use(function name);
 
     - Refer index.js file line number 37-55.
+
+- When we first send the response then it all went okay it'll show 200 status code which means OK. But when we refresh the page it's status code changes to 304 which means nothing is MODIFIED. This thing happen because the response gets cached for performance sake.
+
+- Every get request gets cached. But what if we want to sign in and our password too gets cached? Then her comes the security issue as anyone can get access to the cache and get the password.
+
+    - To avoid this situation we generally send the password in POST request as POST request do not get cached.
+    - POST requests are send the form of form-data or JSON format as it is used 90% of the time.
+
+-
