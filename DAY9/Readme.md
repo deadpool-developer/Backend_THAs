@@ -1,4 +1,4 @@
-~ SENDING STATIC FILES ON THE FRONTEND ~
+# SENDING STATIC FILES ON THE FRONTEND
 
 1. To find the path of the any directory you just have to use simple global variable "__dirname" which is provided by node which gives the path of the file in which it is used. We use this variable just to know the path during the deployment time.
     - Refer index.js file(line 4) -> OUTPUT: E:\Backend_THAs\DAY9.
@@ -17,7 +17,7 @@ NOTE:   Response header server side se aata h & Request header jo client side se
 
 NOTE: We can send any type of file in the download function.
 
-5. JADE (Converted into HTML)
+# JADE (Converted into HTML)
     - To install jade write command -> npm i -s jade
     - Jade is basically works like html but syntax is different.
     - To make jade file, use .jade after the filename.
@@ -33,3 +33,18 @@ NOTE: We can send any type of file in the download function.
     - layout.jade contains the syntax like of html and tab space is important for smooth working.
     - In body, we are using the content from the index.jade file
     - To send the value of title, we have to send the response in render function i.e {key: value pair}
+
+# WHAT IS COOKIE?
+    - Internet Cookie are built specially for internet  web browsers to track,personalize and save the  information about each user session.
+    - Cookies are created  to identify the user when he/she  vists the website again.
+    - Browser cookies are identified and read by “name-value” pairs. These tell cookies where to be sent and what data to recall.
+    - The server only sends the cookie when it wants the web browser to save it. If you’re wondering “where are cookies stored,” it’s simple: your web browser will store it locally to remember the “name-value pair” that identifies you.
+    - If a user returns to that site in the future, the web browser returns that data to the web server in the form of a cookie. This is when your browser will send it back to the server to recall data from your previous sessions.
+    - Websites use HTTP cookies to streamline your web experiences. Without cookies, you’d have to login again after you leave a site or rebuild your shopping cart if you accidentally close the page. Making cookies an important a part of the internet experience.
+    - Cookies are intended to use for 3 reasons -: Session Management, Personalization, Tracking.
+
+6. When the user login, we set the cookies in the browser using token so that when the user login again the token present in the redis gets the previous session data and send back it to the server. Cookie are stored in the web browser itself so that when the user comeback again the cookies which are stored locally to remembered the "name-value pairs" that helps to identify the user. 
+
+7. npx express-generator to install the express modules and packages.
+
+8. Another way to send the file on the server is ny using express.static
