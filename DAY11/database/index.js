@@ -1,3 +1,5 @@
+//npm install --save sequelize
+
 const {Sequelize} = require("sequelize");  // It helps to handle the change of the database in future(ORM)
 const sequelize = new Sequelize(  //object
     "postgres",  //database name

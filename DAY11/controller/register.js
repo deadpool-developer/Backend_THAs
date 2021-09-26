@@ -18,6 +18,8 @@ const register = (req, res) => {
         if(alreadyExists){
             res.status(401).send("Email already exists");
         }
+
+        //npm i -s bcrypt (to hash the password)
         const salt = bcrypt.genSaltSync(saltRounds);
         const hash = bcrypt.hashSync(password, salt);
         const newUser = new User({email: email.toLowerCase(), password: hash})
