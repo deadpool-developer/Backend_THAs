@@ -33,4 +33,4 @@ const register = (req, res) => {
 
 }
 
-module.export = register;
+module.exports = register;
