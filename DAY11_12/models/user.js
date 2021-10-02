@@ -1,18 +1,18 @@
-const {DataType} = require("sequelize");
+const {DataTypes} = require("sequelize");
 const sequelize = require("../database/index");
 
 const User = sequelize.define('User' , {
     //Defining a schema of the table named User
     fullName: {
-        type: DataType.STRING,
+        type: DataTypes.STRING,
         allowNull: false
     },
     email: {
-        type:DataType.STRING,
+        type:DataTypes.STRING,
         allowNull :false
     },
     password: {
-        type: DataType.STRING,
+        type: DataTypes.STRING,
         allowNull:false
     }
 });

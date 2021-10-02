@@ -11,7 +11,7 @@ const bcrypt = require("bcrypt");
  * save 
  */
 const saltRounds = 10;
-const register = (req, res) => {
+const register = async(req, res) => {
     const {email ,password} = req.body;
     try{
         const alreadyExists = await User.findOne({ where : {email}});

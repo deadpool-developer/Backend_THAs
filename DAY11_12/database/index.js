@@ -4,7 +4,7 @@ const {Sequelize} = require("sequelize");  // It helps to handle the change of t
 const sequelize = new Sequelize(  //object
     "postgres",  //database name
     "postgres",  //username
-    "123456789" , //password
+    "adityasaini25112001" , //password
     {
         host: "localhost",
         dialect: "postgres"  //Depend on the database used(if we are using redis/mysql, simply write redis/mysql in dialect and no need to change the code)
@@ -23,6 +23,6 @@ sequelize.sync();
         console.error("Unable to connect to the Database");
     }
     
-}) ();
+})();
 
-module.exports = Sequelize;
+module.exports = sequelize;
