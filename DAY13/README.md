@@ -8,5 +8,3 @@
 - There are two types of call on the website 
     - Options Call (just to check if the server is up & running)
     - API call
-
-- 
